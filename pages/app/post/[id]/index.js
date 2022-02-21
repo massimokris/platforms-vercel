@@ -132,7 +132,9 @@ export default function Post() {
     });
     if (response.ok) {
       mutate(`/api/post?postId=${postId}`);
-      router.push(`https://${post.site.subdomain}.vercel.pub/${post.slug}`);
+      router.push(
+        `https://${post.site.subdomain}.massimokris.com/${post.slug}`
+      );
     }
   };
 
